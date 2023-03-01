@@ -21,7 +21,7 @@ jobs:
     runs-on: [custom, linux, small]
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-go@v3
+      - uses: actions/setup-go@6edd4406fa81c3da01a34fa6f6343087c207a568
         with:
           go-version-file: .go-version
       - name: go env
@@ -46,7 +46,7 @@ jobs:
     runs-on: [custom, linux, medium]
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-go@v3
+      - uses: actions/setup-go@6edd4406fa81c3da01a34fa6f6343087c207a568
         with:
           go-version-file: .go-version
       - name: go env
